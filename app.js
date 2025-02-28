@@ -12,7 +12,7 @@ function agregarAmigo(){
     }else{
 
         amigos.push(amigo);
-
+        
         let listaAmigos = document.getElementById("listaAmigos");
         let contenido = ''; //Variable para almacenar los elementos de la lista
         for (let i = 0; i < amigos.length; i++){
@@ -39,6 +39,9 @@ function sortearAmigo(){
 
          let resultado = document.getElementById("resultado");
          resultado.innerHTML = `El amigo secreto es: ${amigoSorteado}`;
+
+         let limpiarLista=document.getElementById("listaAmigos");
+         limpiarLista.innerHTML=" ";
             
         }
      return;
