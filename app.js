@@ -21,6 +21,8 @@ function agregarAmigo(){
         listaAmigos.innerHTML = contenido;
         
         document.querySelector('#amigo').value = '';
+        document.querySelector('#amigo').focus();
+
         i++
 
         return;
